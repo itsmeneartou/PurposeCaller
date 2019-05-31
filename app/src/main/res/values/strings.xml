@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Purpose Caller</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="purpose_message">Purpose Message</string>
+    <string name="sufficient_permission_read">You have not given sufficient permissions to Purposecaller app to receive purpose messages.</string>
+    <string name="overdraw_read">You will have to enable overdrawing over other apps permission for Purposecaller app in settings to receive purpose messages.</string>
+    <string name="message_sent">Message sent.</string>
+    <string name="set">SET</string>
+    <string name="edit">EDIT</string>
+    <string name="sufficient_permission_send">You have not given sufficient permissions to Purposecaller app to send purpose messages.</string>
+    <string name="overdraw_send">You will have to enable overdrawing over other apps permission for Purposecaller app in settings to send purpose messages.</string>
+    <string name="not_login_read">You are not logged in. Log in to receive purpose messages.</string>
+    <string name="not_login_send">You are not logged in. Log in to send purpose messages.</string>
+    <string name="doesnt_use_app">%1$s has not set any purpose message.</string>
+    <string name="error_occured">An error occured: </string>
+    <string name="sign_out">Sign out</string>
+    <string name="connect_on_instagram">Connect on Instagram</string>
+    <string name="help_us_improve">Help us improve</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="rate_this_app">Rate this app</string>
+    <string name="change_language">Change language</string>
+    <string name="please_wait">Please wait while we fetch the data.</string>
+    <string name="send">SEND</string>
+    <string name="message_send_success"> Message sent.</string>
+    <string name="message_send_fail">Message was not delivered.</string>
+    <string name="login_alert">PurposeCaller: Kindly login to receive purpose messages.</string>
+    <string name="membership_check_ref">membership_check_2</string>
+
+    <string-array name="options">
+        <item>Multiplayer TicTacToe</item>
+        <item>Multiplayer Ludo</item>
+        <item>Multiplayer Quiz</item>
+        <item>Browse With Friend</item>
+        <item>Watch Videos Together</item>
+        <item>Call with purpose</item>
+    </string-array>
+
+    <string-array name="topics">
+        <item>Sport</item>
+        <item>Geography</item>
+        <item>History</item>
+
+    </string-array>
+
+
+    <string name="outgoing_permission_text">Please wait till the other person accepts the permission to play</string>
+    <string name="database_calling_details_ref">CallingDetails_2</string>
+    <string name="the_caller_says">The caller says \" %1$s \"</string>
+    <string name="calling_yourself">You are calling yourself, purpose caller features work when you call someone else who uses purpose caller. Invite a friend now to enjoy the features.</string>
+    <string name="invite_message">Hey! Download the Purposecaller app and know why someone is calling you! Download it from: https://ma9c4.app.goo.gl/rniX</string>
+    <string name="not_on_pc">The person you are trying to call is not on PurposeCaller so you can\'t play with that person. Do you want to play with someone from our world or a bot ?</string>
+    <string name="not_on_pc_invite">The person you are %1$s doesn\'t use purpose caller. Do you want to play with someone from our world or a bot ?</string>
+    <string name="pc_call_yourself">Purpose Caller features don\'t work when you call yourself. Do you want to play</string>
+    <string name="data_downloading">Please wait while necessary data is being downloaded.</string>
+    <string name="not_logged_in">You are not logged in. Log in to use Purpose caller features.</string>
+    <string name="your_message_sent">Your message has been sent.</string>
+    <string name="game_state">Game State: %1$s</string>
+    <string name="question">Q. %1$s</string>
+    <string name="send_button_label">SEND</string>
+
+    <string name="title_activity_multi_browsing">MultiBrowsingActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_video_calling">VideoCallingActivity</string>
+    <string name="title_activity_main">Purpose Caller</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="youtube_developer_key">AIzaSyAEE8x3TTSP7hEiwK4FWTjOEk1rwIK9qpM</string>
+    <string name="refresh">Refresh</string>
+    <string name="agora_app_id">aed3b4961bae4532b0c2ce18ec440137</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="creating_a_room_with">Creating a room with %1$s</string>
+    <string name="room_created_waiting_for">Room created. Waiting for %1$s to join.</string>
+</resources>

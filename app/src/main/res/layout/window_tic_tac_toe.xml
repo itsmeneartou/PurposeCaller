@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+   >
+    <include layout="@layout/base_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@android:color/transparent"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/scroll_view"
+
+    android:layout_below="@id/toolbar"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/supporting_text"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            tools:text="Game State: You lost"
+         />
+        <com.purposecaller.purposecaller.TicTacToe.TicTacToeView
+            android:id="@+id/tic_tac_toe"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+           />
+
+
+
+</LinearLayout>
+</ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad_view"
+        android:layout_marginTop="16dp"
+        ads:adSize="SMART_BANNER"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/scroll_view"
+        ads:adUnitId="ca-app-pub-6518181375956114/1797875713"
+
+        />
+    </RelativeLayout>

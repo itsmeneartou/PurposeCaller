@@ -1,0 +1,119 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+       >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+
+            />
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/profile_photo"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@drawable/user"
+           android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:id="@+id/changeProfilePhoto"
+
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"/>
+
+
+
+        <!-- username section -->
+
+
+
+        <!-- display_name section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+
+            android:id="@+id/relLayout2"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:srcCompat="@drawable/ic_person_gray_24dp"
+                app:backgroundTint="@color/black"
+                android:id="@+id/name_icon"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/display_name"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/name_icon"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:inputType="textNoSuggestions"
+                android:hint="Display Name"/>
+
+        </RelativeLayout>
+
+
+        <!-- phone number section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:id="@+id/relLayout3"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/call_icon"
+                app:srcCompat="@drawable/ic_call_gray_24dp"
+                app:backgroundTint="@color/black"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneNumber"
+                android:enabled="false"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/call_icon"
+                android:layout_marginStart="16dp"
+                android:inputType="phone"
+                android:hint="Phone Number"/>
+
+        </RelativeLayout>
+
+
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/activity_vertical_margin"
+          android:text="save"
+          android:id="@+id/save"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

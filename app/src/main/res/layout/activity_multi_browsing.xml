@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.purposecaller.purposecaller.activities.MultiBrowsingActivity">
+
+    <EditText
+        android:id="@+id/url_box"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_marginTop="4dp"
+        android:inputType="textUri"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:hint="Enter Url here"
+
+        />
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/web_view"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/interact_via_container"
+
+        />
+
+</LinearLayout>

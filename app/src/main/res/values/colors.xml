@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2B3D4D</color>
+    <color name="cyan_500">#00BCD4</color>
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="colorPrimaryDark">#23303D</color>
+
+    <!-- Accent color of the app -->
+    <color name="colorAccent">#1565c0</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue_puck">#03A9F4</color>
+    <color name="green_puck">#66BB6A</color>
+    <color name="red">#F44336</color>
+    <color name="green">#008000</color>
+    <color name="yellow">#FFCC00</color>
+    <color name="white">#fff</color>
+    <color name="black">#000000</color>
+    <!-- Text color for the primary location of the earthquake in the list item -->
+    <color name="textColorEarthquakeLocation">#2B3D4D</color>
+    <color name="greyish">#7F7F7F</color>
+    <color name="textColorEarthquakeDetails">#B4BAC0</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    card_view:cardBackgroundColor="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/purpose_image_view"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/purpose_image_height"
+        tools:src="@drawable/tic_tac_toe"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/purpose_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        tools:text="Tic tac toe"
+        android:layout_margin="@dimen/text_margin"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+

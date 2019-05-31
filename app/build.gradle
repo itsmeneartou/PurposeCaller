@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+android {
+    signingConfigs {
+        config {
+            keyAlias 'ReleaseKey'
+            keyPassword 'ASdf@100'
+            storeFile file('F:/All in one folder/final apps/keystore2.jks')
+            storePassword 'ASdf@100'
+        }
+    }
+    dexOptions {
+        jumboMode true
+    }
+    configurations.all {
+        resolutionStrategy {
+            force 'com.google.code.findbugs:jsr305:1.3.9'
+            force 'com.android.support:multidex:1.0.3'
+        }
+
+
+    }
+    compileSdkVersion 28
+    buildToolsVersion "28.0.2"
+    defaultConfig {
+        applicationId "com.purposecaller.purposecaller"
+        minSdkVersion 17
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 12
+        versionName "1.12"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+    splits {
+        abi {
+            // Enable ABI split
+            enable true
+
+            // Clear list of ABIs
+            reset()
+
+            // Specify each architecture currently supported by the Voice SDK
+            include "armeabi-v7a", "arm64-v8a", "x86"
+
+            // Specify that we do not want an additional universal SDK
+            universalApk false
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+
+    compile('com.google.api-client:google-api-client-android:1.23.0') {
+        exclude group: 'org.apache.httpcomponents'
+
+    }
+    compile('com.google.apis:google-api-services-youtube:v3-rev204-1.23.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    compile project(":youtubeplayer")
+    compile 'io.michaelrocks:libphonenumber-android:8.9.5'
+    compile 'com.android.support:appcompat-v7:28+'
+    compile 'com.android.support:cardview-v7:28+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:28+'
+    compile 'com.google.firebase:firebase-ads:15.0.1'
+    compile 'com.firebaseui:firebase-ui-auth:4.2.0'
+    compile 'com.firebaseui:firebase-ui-storage:4.2.0'
+    compile 'com.google.firebase:firebase-storage:16.0.2'
+    compile 'com.google.firebase:firebase-auth:16.0.3'
+    compile 'com.google.firebase:firebase-core:16.0.1'
+    compile 'com.google.firebase:firebase-firestore:17.1.0'
+    compile 'com.google.firebase:firebase-messaging:17.1.0'
+    compile 'com.google.firebase:firebase-database:16.0.2'
+    compile 'com.android.support:support-vector-drawable:28+'
+    compile 'com.algolia:algoliasearch-android:3.+'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.android.support:recyclerview-v7:28+'
+    compile 'com.android.support:multidex:1.0.3'
+    compile 'io.agora.rtc:full-sdk:2.3.0'
+    compile 'com.crashlytics.sdk.android:crashlytics:2.9.3'
+    compile 'com.google.api-client:google-api-client-gson:1.23.0'
+}
+apply plugin: 'com.google.gms.google-services'

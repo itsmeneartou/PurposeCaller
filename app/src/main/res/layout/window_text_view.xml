@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+
+  >
+    <include layout="@layout/base_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:id="@+id/text_view"
+        android:layout_below="@id/toolbar"
+
+        tools:text="The caller says &quot; Hello &quot; "
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+       />
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad_view"
+        android:layout_marginTop="16dp"
+        ads:adSize="SMART_BANNER"
+        android:layout_below="@id/text_view"
+        android:gravity="center_horizontal"
+        ads:adUnitId="ca-app-pub-6518181375956114/1797875713"
+
+/>
+    </RelativeLayout>

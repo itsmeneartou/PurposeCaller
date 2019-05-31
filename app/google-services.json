@@ -1,0 +1,161 @@
+{
+  "project_info": {
+    "project_number": "883632240282",
+    "firebase_url": "https://purposecaller.firebaseio.com",
+    "project_id": "purposecaller",
+    "storage_bucket": "purposecaller.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883632240282:android:2ea7d1465272332e",
+        "android_client_info": {
+          "package_name": "com.learnitow.savingmultplecontactsatonce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883632240282-v8rq8f93r50viq2olbbnt3ofcitfg51u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.learnitow.savingmultplecontactsatonce",
+            "certificate_hash": "1e80cf75b229f8f3b79a8f4299fbb34303920bb9"
+          }
+        },
+        {
+          "client_id": "883632240282-joat74jimcj6ted9eommecue5ucft0qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEATPFOE-La9MV8S70QGTFAZFu5kA8YnY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883632240282-87mrd8ffr20e6qu1jhl27b5gp6bi860s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883632240282:android:f7c49ee5e21151c6",
+        "android_client_info": {
+          "package_name": "com.multiplecontacts.savingmultplecontactsatonce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883632240282-mc32ues7eg8oul1alc1kkturojol8br3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.multiplecontacts.savingmultplecontactsatonce",
+            "certificate_hash": "1e80cf75b229f8f3b79a8f4299fbb34303920bb9"
+          }
+        },
+        {
+          "client_id": "883632240282-joat74jimcj6ted9eommecue5ucft0qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEATPFOE-La9MV8S70QGTFAZFu5kA8YnY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883632240282-87mrd8ffr20e6qu1jhl27b5gp6bi860s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-6518181375956114~9379654125"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883632240282:android:20bddea32db17bb1",
+        "android_client_info": {
+          "package_name": "com.purposecaller.purposecaller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883632240282-r29lp6n5gqkvcko8v0hldc6gql2d60uh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.purposecaller.purposecaller",
+            "certificate_hash": "9295cea864af1ecdd8fec3e1f12d8fe354aad321"
+          }
+        },
+        {
+          "client_id": "883632240282-ugotdl2pid20k0hu3r8o16r51ttrejlh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.purposecaller.purposecaller",
+            "certificate_hash": "1601295902e6361c9fe7b2366f7ef0581b0c3e6a"
+          }
+        },
+        {
+          "client_id": "883632240282-uh0ob1n20432nen9j7549fcrf7sakej8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.purposecaller.purposecaller",
+            "certificate_hash": "1e80cf75b229f8f3b79a8f4299fbb34303920bb9"
+          }
+        },
+        {
+          "client_id": "883632240282-joat74jimcj6ted9eommecue5ucft0qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEATPFOE-La9MV8S70QGTFAZFu5kA8YnY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883632240282-87mrd8ffr20e6qu1jhl27b5gp6bi860s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-6518181375956114~1156422470"
+    }
+  ],
+  "configuration_version": "1"
+}

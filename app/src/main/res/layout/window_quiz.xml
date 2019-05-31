@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ad_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    >
+
+
+        <include layout="@layout/base_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+         />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/scroll_view"
+            android:layout_below="@id/toolbar"
+
+            android:layout_height="wrap_content">
+            <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_width="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/game_state_text_view"
+                    android:layout_marginTop="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/black"
+                    tools:text="Game State: You lost"
+                    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="Who Won 2011 cricket World cup ?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/question_textview"
+            android:layout_margin="16dp"
+
+            />
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="Srilanka"
+            android:id="@+id/option_a_textview"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_height="wrap_content"
+
+            tools:text="Pakistan"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/option_a_textview"
+            android:layout_toEndOf="@id/option_a_textview"
+
+            android:id="@+id/option_b_textview"
+
+
+
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+
+
+         />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:ellipsize="end"
+            tools:text="India"
+            android:id="@+id/option_c_textview"
+            android:layout_below="@id/option_a_textview"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:ellipsize="end"
+            tools:text="Australia"
+            android:layout_below="@id/option_a_textview"
+            android:layout_toRightOf="@id/option_c_textview"
+            android:layout_toEndOf="@id/option_c_textview"
+            android:id="@+id/option_d_textview"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+
+          />
+      </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/supporting_text"
+            android:layout_margin="16dp"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="Game state: Opponent has not answered \n ello"
+         />
+
+    </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad_view"
+        ads:adSize="SMART_BANNER"
+       android:layout_below="@id/scroll_view"
+        android:gravity="center_horizontal"
+        ads:adUnitId="ca-app-pub-6518181375956114/1797875713"
+
+
+/>
+
+</RelativeLayout>

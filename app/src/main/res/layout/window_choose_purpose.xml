@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+        <include layout="@layout/base_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@android:color/transparent"
+         />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:clipToPadding="false"
+            android:layout_below="@id/toolbar"
+
+            tools:listitem="@layout/purpose_item_layout" >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:text="Play tic tac toe"
+                    android:id="@+id/tic_tac_toe"
+                    app:srcCompat="@drawable/tic_tac_toe"/>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad_view"
+        android:layout_marginTop="16dp"
+        ads:adSize="SMART_BANNER"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/list"
+        ads:adUnitId="ca-app-pub-6518181375956114/1797875713"
+
+        />
+    </RelativeLayout>

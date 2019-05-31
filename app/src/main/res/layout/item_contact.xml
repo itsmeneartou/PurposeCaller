@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+
+            android:id="@+id/profile_thumbnail"
+            app:srcCompat="@drawable/user"
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+
+           />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="72dp"
+        android:paddingStart="72dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textAppearance="?attr/textAppearanceListItem"
+        tools:text="Kiran Watwani"
+        android:id="@+id/displayname"
+        android:layout_gravity="center"
+
+        />
+
+
+
+    </FrameLayout>

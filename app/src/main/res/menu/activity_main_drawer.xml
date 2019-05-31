@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person_gray_24dp"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/purpose_calling"
+            android:icon="@drawable/ic_call_black_24dp"
+            android:title="Purpose calling" />
+        <item
+            android:id="@+id/auto_messages"
+            android:icon="@drawable/ic_autorenew_black_24dp"
+            android:title="Automatic Messages" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+</menu>
